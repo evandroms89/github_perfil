@@ -1,12 +1,20 @@
 import styles from './Perfil.module.css'
 
-const Perfil = ({ nomeUsuario }) => {
-    // as chaves entre parenteses são desestruturação
+const Perfil = ({ nomeUsuarioFinal}) => {
+    // const [carregou, setCarregou] = useState(false);
+    // useEffect(() => {
+    //     setCarregou(true);
+    //     if(carregou == true) {
+    //         ok
+    //     }
+    //     setCarregou(false)
+    // }, [acesso])
     return (
         <header className={styles.header}>
-            <img className={styles.avatar} src={`https://github.com/${nomeUsuario}.png`} />
+            <a href={`https://github.com/${nomeUsuarioFinal}`} target="_blank">
+                <img className={styles.avatar} src={`https://github.com/${nomeUsuarioFinal}.png`} /></a>
             <h1 className={styles.name}>
-                {nomeUsuario}
+                {nomeUsuarioFinal}
             </h1>
         </header>
     )

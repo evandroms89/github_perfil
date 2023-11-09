@@ -1,7 +1,12 @@
+h1 {
+    color: var(--corSecundaria);
+}
+
 .list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 16px;
+    padding-bottom: 40px;
 }
 
 .listItem {
@@ -12,6 +17,7 @@
 
 .itemName b, .itemLanguage b {
     margin-right: 8px;
+    color: var(--corSecundaria);
 }
 
 .itemLink {
@@ -23,4 +29,11 @@
     margin-top: 8px;
     padding: 8px;
     text-decoration: none;
+    border-radius: 15px;
+    transition: all 0.5s;
+}
+
+.itemLink:hover {
+    background-color: var(--corExtra);
+    color: #fff;
 }
