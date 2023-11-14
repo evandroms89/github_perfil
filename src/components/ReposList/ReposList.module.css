@@ -37,3 +37,12 @@ h1 {
     background-color: var(--corExtra);
     color: #fff;
 }
+
+@media only screen and (max-width: 700px) {
+    .list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 0px 15px 40px 15px
+    }
+  }
